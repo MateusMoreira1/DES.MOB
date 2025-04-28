@@ -73,7 +73,7 @@ build/app/outputs/apk/release/app-release.apk
 
 <p align="center">
   <img src="./login.png" width="45%" />
-  <img src="./img01.png" width="45%" />
+  <img src="Img01.png" width="45%" />
 </p>
 
 ---
