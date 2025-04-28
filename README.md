@@ -1,120 +1,102 @@
-# Aplicativo Pokédex
+# 📱 Pokédex Flutter
 
-Uma aplicação Pokédex desenvolvida com Flutter como projeto de aprendizado. Utiliza a [PokeAPI](https://pokeapi.co/) para buscar dados dos Pokémon e exibi-los em uma interface amigável.
+Uma Pokédex interativa desenvolvida em **Flutter**, consumindo dados da [PokeAPI](https://pokeapi.co/). Projeto criado com o objetivo de praticar desenvolvimento mobile, consumo de API, gerenciamento de estado e otimização de performance.
 
-## Como construir o projeto
+## 🚀 Começando
+
+Siga os passos abaixo para instalar, rodar o projeto localmente e gerar o APK.
 
 ### Pré-requisitos
 
-- Ter o Flutter instalado ([Guia de instalação](https://docs.flutter.dev/get-started/install)).
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) instalado na máquina
+- [Git](https://git-scm.com/) instalado
+- Emulador Android/iOS ou dispositivo físico configurado
 
-### Passos para instalação e execução
+### Instalação e execução
 
-```sh
-$ git clone https://github.com/josedudidas/D.S.-MOBILE-I-Trabalho-01.git && cd pokedex
-$ flutter pub get
-$ flutter run
+```bash
+# Clone o repositório
+git clone https://github.com/MateusMoreira1/DES.MOB.git
+
+# Acesse a pasta do projeto
+cd PokedexFlutter
+
+# Instale as dependências
+flutter pub get
+
+# Rode o aplicativo
+flutter run
 ```
 
-### Para gerar o APK
+### Gerar APK para Android
 
-```sh
-$ flutter build apk
+```bash
+flutter build apk --release
 ```
 
-O APK gerado estará em `build/app/outputs/apk/release/app-release.apk`.
+O APK gerado estará disponível em:
 
-**[Clique aqui para baixar o APK](https://seulinkparaapk.com/pokedex.apk)** (substituir quando houver o link oficial).
+```bash
+build/app/outputs/apk/release/app-release.apk
+```
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- **Flutter** - Framework de desenvolvimento mobile multiplataforma
-- **Dart** - Linguagem de programação
-- **SQLite** - Cache local de dados
-- **cached_network_image** - Cache de imagens de rede
+- **Flutter** — Framework para desenvolvimento multiplataforma
+- **Dart** — Linguagem de programação
+- **SQLite** — Armazenamento local de dados
+- **cached_network_image** — Cache de imagens para melhor desempenho
+- **Provider** — Gerenciamento de estado (se aplicável)
+- **HTTP** — Consumo de APIs REST
 
-## Principais Funcionalidades ✨
+---
 
-- **Navegação e Busca:**
+## ✨ Funcionalidades
 
-  - Lista de Pokémon com rolagem infinita.
-  - Busca por nome de Pokémon com debounce.
-  - Filtros por Tipo e Geração.
+- Listagem de Pokémon com rolagem infinita
+- Pesquisa de Pokémon por nome
+- Filtros por Tipo e Geração
+- Detalhamento completo do Pokémon:
+  - Atributos (HP, Ataque, Defesa, etc.)
+  - Habilidades e fraquezas
+  - Evoluções
+  - Sons (cries) dos Pokémon
+  - Sprites com versões brilhantes
+- Comparação de atributos entre Pokémon
+- Cache de dados e imagens
+- Carregamento otimizado e paginado
+- Efeitos especiais para Pokémon Lendários e Míticos
 
-- **Detalhamento Completo do Pokémon:**
+---
 
-  - **Informações Básicas:** ID, altura, peso, espécie, descrição (aleatória entre versões de jogos), experiência base, felicidade base, taxa de captura, taxa de crescimento, habitat e geração.
-  - **Sprites:** Galeria de imagens (frente, costas, padrão e brilhante) com efeito de brilho.
-  - **Tipos:** Exibição dos tipos com cores temáticas.
-  - **Sons (Cries):** Reprodução dos sons "Moderno" e "Clássico" dos Pokémon.
-  - **Atributos Básicos:** Visualização dos atributos (HP, Ataque, Defesa, Ataque Especial, Defesa Especial, Velocidade) com barras coloridas.
-  - **Comparação de Atributos:** Comparação dos atributos com outro Pokémon pesquisável.
-  - **Efetividade de Tipos:** Exibe fraquezas, resistências, imunidades (defensivo) e vantagens/desvantagens (ofensivo).
-  - **Habilidades:** Lista habilidades normais e ocultas, com descrições detalhadas, efeitos e Pokémon relacionados.
-  - **Itens Segurados:** Exibe itens que o Pokémon pode carregar na natureza, raridade por versão e descrição dos itens.
-  - **Cadeia Evolutiva:** Visualiza toda a linha evolutiva, com condições específicas (nível, item, troca, felicidade, período do dia, etc.).
-  - **Movimentos:** Lista detalhada dos golpes que o Pokémon pode aprender, com filtros por método de aprendizado (Level Up, TM/HM, Ovo, Tutor) e ordenação. Inclui detalhes do movimento (Tipo, Classe, Poder, Precisão, PP, descrição).
+## 🖼️ Prints da Aplicação
 
-- **Efeitos Visuais Especiais:**
+<p align="center">
+  <img src="./login.png" width="45%" />
+  <img src="./img01.png" width="45%" />
+</p>
 
-  - Efeitos de partículas e medalhas para Pokémon Lendários e Míticos.
+---
 
-- **Performance:**
-  - Uso de cache local (SQLite) para dados da API, melhorando o desempenho.
-  - Cache de imagens com `cached_network_image`.
-  - Carregamento paginado de listas (Pokémon, Movimentos, etc.).
+## 📂 Código-fonte
 
-## Prints da Aplicação 📸
+O código está completamente versionado em Git, seguindo boas práticas de organização:
 
-### Tela de login
+- `lib/` — Código principal
+- `models/` — Modelos de dados
+- `screens/` — Telas do aplicativo
+- `widgets/` — Componentes reutilizáveis
+- `services/` — Serviços de API e banco de dados
+- `utils/` — Utilitários e helpers
 
-![](./media/login.png)
+---
 
-### Tela de registro
+## 🧑‍💻 Autor
 
-![](./media/register.png)
+- Desenvolvido por **[Mateus Moreira](https://github.com/MateusMoreira1)**
 
-### Tela Inicial
+---
 
-![](./media/image1.png)
+## 📢 Observações Finais
 
-### Detalhes do Pokémon
-
-![](./media/image2.png)
-
-#### Informações Básicas
-
-![](./media/image3.png)
-
-#### Itens Segurados
-
-![](./media/image11.png)
-
-#### Atributos Básicos
-
-![](./media/image4.png)
-![](./media/image8.png)
-
-#### Fraquezas e Resistências
-
-![](./media/image5.png)
-![](./media/image9.png)
-
-#### Habilidades e Sons dos Pokémon
-
-![](./media/image6.png)
-![](./media/gif4.gif)
-
-#### Evoluções
-
-![](./media/gif2.gif)
-
-#### Golpes
-
-![](./media/image7.png)
-![](./media/image10.png)
-
-### Animações Customizadas
-
-![](./media/gif1.gif)
-![](./media/gif3.gif)
+Este projeto foi desenvolvido com fins educacionais, focando em boas práticas de Flutter, arquitetura de aplicativos e otimização de recursos.
