@@ -1,30 +1,37 @@
 # 📱 Pokédex Flutter
 
-Uma Pokédex interativa desenvolvida em **Flutter**, consumindo dados da [PokeAPI](https://pokeapi.co/). Projeto criado com o objetivo de praticar desenvolvimento mobile, consumo de API, gerenciamento de estado e otimização de performance.
+Uma Pokédex interativa desenvolvida em **Flutter**, consumindo dados da [PokeAPI](https://pokeapi.co/).  
+Projeto criado com o objetivo de praticar desenvolvimento mobile, consumo de APIs REST, gerenciamento de estado e otimização de performance.
 
-## 🚀 Começando
+---
 
-Siga os passos abaixo para instalar, rodar o projeto localmente e gerar o APK.
+## 🚀 Como Executar o Projeto
+
+Siga os passos abaixo para instalar e rodar o aplicativo localmente, além de gerar o APK de produção.
 
 ### Pré-requisitos
 
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) instalado na máquina
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) instalado
 - [Git](https://git-scm.com/) instalado
 - Emulador Android/iOS ou dispositivo físico configurado
 
-### Instalação e execução
+### Instalação
 
 ```bash
 # Clone o repositório
 git clone https://github.com/MateusMoreira1/DES.MOB.git
 
 # Acesse a pasta do projeto
-cd PokedexFlutter
+cd pokedex
 
 # Instale as dependências
 flutter pub get
+```
 
-# Rode o aplicativo
+### Execução
+
+```bash
+# Execute o aplicativo em modo debug
 flutter run
 ```
 
@@ -34,38 +41,38 @@ flutter run
 flutter build apk --release
 ```
 
-O APK gerado estará disponível em:
+O APK será gerado no caminho:
 
-```bash
+```
 build/app/outputs/apk/release/app-release.apk
 ```
 
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
-- **Flutter** — Framework para desenvolvimento multiplataforma
+- **Flutter** — Framework multiplataforma para desenvolvimento mobile
 - **Dart** — Linguagem de programação
-- **SQLite** — Armazenamento local de dados
-- **cached_network_image** — Cache de imagens para melhor desempenho
-- **Provider** — Gerenciamento de estado (se aplicável)
-- **HTTP** — Consumo de APIs REST
+- **SQLite** — Banco de dados local para cache de informações
+- **cached_network_image** — Cache de imagens de rede
+- **Provider** — Gerenciamento de estado (caso aplicável)
+- **HTTP** — Consumo de APIs RESTful
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades Principais
 
-- Listagem de Pokémon com rolagem infinita
-- Pesquisa de Pokémon por nome
-- Filtros por Tipo e Geração
-- Detalhamento completo do Pokémon:
+- 🔍 Listagem e busca de Pokémon com rolagem infinita
+- 🛡️ Filtros por tipo e geração
+- 📖 Exibição completa de informações dos Pokémon:
   - Atributos (HP, Ataque, Defesa, etc.)
   - Habilidades e fraquezas
   - Evoluções
-  - Sons (cries) dos Pokémon
-  - Sprites com versões brilhantes
-- Comparação de atributos entre Pokémon
-- Cache de dados e imagens
-- Carregamento otimizado e paginado
-- Efeitos especiais para Pokémon Lendários e Míticos
+  - Sons (cries) originais
+  - Sprites padrões e brilhantes
+- ⚡ Carregamento otimizado com cache local
+- 🧩 Comparação de atributos entre Pokémon
+- 🎖️ Efeitos especiais para Pokémon Lendários e Míticos
 
 ---
 
@@ -73,30 +80,30 @@ build/app/outputs/apk/release/app-release.apk
 
 <p align="center">
   <img src="./login.png" width="45%" />
-  <img src="Img01.png" width="45%" />
+  <img src="./Img01.png" width="45%" />
 </p>
 
 ---
 
-## 📂 Código-fonte
+## 📂 Organização do Código
 
-O código está completamente versionado em Git, seguindo boas práticas de organização:
+O projeto é organizado seguindo boas práticas de estrutura de projetos Flutter:
 
-- `lib/` — Código principal
-- `models/` — Modelos de dados
-- `screens/` — Telas do aplicativo
-- `widgets/` — Componentes reutilizáveis
-- `services/` — Serviços de API e banco de dados
-- `utils/` — Utilitários e helpers
+- `lib/` — Código principal do aplicativo
+  - `models/` — Modelos de dados
+  - `screens/` — Telas da aplicação
+  - `widgets/` — Componentes reutilizáveis
+  - `services/` — Serviços para API e Banco de Dados
+  - `utils/` — Funções utilitárias e helpers
 
 ---
 
 ## 🧑‍💻 Autor
 
-- Desenvolvido por **[Mateus Moreira](https://github.com/MateusMoreira1)**
+Desenvolvido por **[Mateus Moreira](https://github.com/MateusMoreira1)**.
 
 ---
 
 ## 📢 Observações Finais
 
-Este projeto foi desenvolvido com fins educacionais, focando em boas práticas de Flutter, arquitetura de aplicativos e otimização de recursos.
+Este projeto foi desenvolvido com fins educacionais, focando em boas práticas de Flutter, arquitetura limpa, organização de código e otimização de performance em aplicativos mobile.
